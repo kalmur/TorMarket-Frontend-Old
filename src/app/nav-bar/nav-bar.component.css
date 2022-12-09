@@ -1,0 +1,18 @@
+.navbar-brand {
+    /*text-align: center;*/
+    padding-right: 550px;
+}
+
+.navbar-brand {
+    font-family: "Hanson";
+    font-size: 26px;
+    letter-spacing: 2px;
+}
+
+.navbar-nav {
+    padding-left: 3.5rem;
+}
+
+.user-options {
+    padding-right: 3.5rem;
+}

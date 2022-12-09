@@ -1,13 +1,24 @@
-<div class="row">
-  <div class="shadow-lg col-sm-4">
-    <div class="card">
-      <img class="propImg" src="assets/images/id_1.jpg" />
-      <div class="card-body p-2">
-        <h1>{{Property.Name}}</h1>
-        <h2>{{Property.Price}}</h2>
-        <h3>{{Property.Type}}</h3>
-        <p>{{Property.Id}}</p>
-      </div>
-    </div>
+<div class="card">
+  <div class="card-img-wrapper">
+    <img *ngIf="property.Image" class="card-img-top" src="assets/images/{{property.Image}}.png" />
+    <img *ngIf="!property.Image" class="card-img-top" src="assets/images/no-image.png" />
+    <ul *ngIf="!hideIcons" class="list-inline text-center member-icons animate">
+      <li class="list-inline-item">
+        <button routerLink="/item-detail/{{property.Id}}" class="btn btn-primary"><i class="fa-sharp fa-solid fa-pen-to-square"></i></button>
+      </li>
+      <li class="list-inline-item">
+        <button class="btn btn-primary"><i class="fa-regular fa-address-book"></i></button>
+      </li>
+    </ul>
   </div>
+
+  <div class="card-body p-1" style="text-align: center">
+    <h2 class="mt-3"> {{property.Name}} </h2>
+    <h4> {{property.City}} </h4>
+    <!--<hr class="mb-2 mb-2" />-->
+    <h5> <span class="font-highlight">£{{property.Price}}</span></h5>
+    <h6> {{property.Type}} </h6>
+  </div>
+
 </div>
+
