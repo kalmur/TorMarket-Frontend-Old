@@ -9,3 +9,7 @@
 .form-group p {
     margin-left: 2rem;
 }
+
+.card-header h3 {
+    text-align: center;
+}

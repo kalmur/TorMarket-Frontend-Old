@@ -8,6 +8,7 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { PropertyDetailResolverService } from './services/property-detail.resolver.service';
 
 import { AppComponent } from './app.component';
 import { PropertyCardComponent } from './Property/property/property-card/property-card.component';
@@ -26,7 +27,9 @@ const appRoutes: Routes = [
   {path: '', component: PropertyListComponent},
   {path: 'sell-item', component: PropertyListComponent},
   {path: 'add-listing', component: AddListingComponent},
-  { path: 'item-detail/:id', component: PropertyDetailComponent },
+  {path: 'item-detail/:id',
+          component: PropertyDetailComponent,
+          resolve: { prp: PropertyDetailResolverService }},
   //{path: '**', component: PageNotFound} -> apply custom
   { path: 'user/login', component: UserLoginComponent },
   { path: 'user/register', component: UserRegisterComponent },
@@ -54,13 +57,14 @@ const appRoutes: Routes = [
     BsDropdownModule.forRoot(),
     TabsModule.forRoot(),
     ButtonsModule.forRoot(),
-    BsDatepickerModule.forRoot()
+    BsDatepickerModule.forRoot(),
   ],
   providers: [
     ListingsService,
     UserServiceService,
     AlertifyService,
-    AuthService
+    AuthService,
+    PropertyDetailResolverService
   ],
   bootstrap: [AppComponent]
 })

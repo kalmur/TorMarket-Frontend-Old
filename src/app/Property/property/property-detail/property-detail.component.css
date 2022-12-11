@@ -1,0 +1,19 @@
+.card {
+    min-height: 600px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card img {
+    padding: 10px;
+}
+
+.card-body h2 {
+    font-family: Hanson;
+}
+
+.description {
+    padding-left: 1.5rem;
+}
