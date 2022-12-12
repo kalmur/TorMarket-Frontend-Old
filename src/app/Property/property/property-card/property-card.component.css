@@ -7,11 +7,6 @@ h1 {
     src: url(/assets/fonts/Hanson-Bold.ttf);
 }
 
-@font-face {
-  font-family: 'Typography';
-  src: url(/assets/fonts/TYPOGRAPHY PRO Extra Bold.ttf);
-}
-
 .card {
     min-height: 500px;
     padding: 5px 5px;
@@ -20,7 +15,6 @@ h1 {
 
 .card-body h2 {
     font-family: "hanson", sans-serif;
-    /*color: #0069d9;*/
     font-size: 26px;
     color: rgba(0.5, 0, 0, 0.75);
     padding: 0 5px;
@@ -33,14 +27,12 @@ h1 {
 }
 
 .card-body h6 {
-  font-family: "Typography" sans-serif;
-  /*color: #0069d9;*/
+  font-family: "Typography", sans-serif;
   padding: 0 5px;
 }
 
 .card-body p {
   font-family: "Typography" sans-serif;
-  /*color: #0069d9;*/
   padding: 0 5px;
 }
 

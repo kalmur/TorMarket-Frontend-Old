@@ -2,15 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\app",
-    "\\src\\app\\model",
-    "\\src\\app\\Property",
     "\\src\\app\\Property\\property",
-    "\\src\\app\\Property\\property\\add-listing",
-    "\\src\\app\\Property\\property\\property-list",
-    "\\src\\assets",
-    "\\src\\assets\\images"
+    "\\src\\app\\Property\\property\\property-card"
   ],
-  "SelectedNode": "\\src\\app\\Property\\property\\add-listing\\add-listing.component.html",
+  "SelectedNode": "\\angular.json",
   "PreviewInSolutionExplorer": false
 }
